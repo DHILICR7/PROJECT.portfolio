@@ -1,0 +1,53 @@
+.nav{
+    margin:0px;
+    }
+.nav{
+    height:10vh;
+    width:100vw;
+    background-color: grey;
+    position:fixed;
+}
+.nav li {
+    float:right;
+    list-style-type: none;
+    padding: 20px;
+    margin-right:100px ;
+    font-size: 30px;
+    font-variant: small-caps;
+    font: weight 900px;
+    transition: 0.3s;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+a{
+    text-decoration: none;
+}
+.nav ul li:hover , .nav ul li a:focus {
+    border-top: 5px solid black;
+    color:black;
+    background-color: white;
+}
+.nav ul li a:hover{
+    color:black;
+}
+:target{
+    border-top: 10px solid balck;
+}
+.pname span{
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    animation: myprofilename 2s infinite;
+    animation-delay: calc(.1s*var(--i));
+}
+@keyframes myprofilename {
+    0%,80%{
+        transform: translateY(0px);
+    }
+    40%{
+        transform: translateY(-10px);
+    }
+}
